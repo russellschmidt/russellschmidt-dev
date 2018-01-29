@@ -32,3 +32,7 @@ For an overview of the project structure please refer to the [Gatsby documentati
 
 ## Wanna Borrow This Project?
 [Here is a nice skeleton](https://github.com/dschau/gatsby-blog-starter-kit) from Dustin Schau
+
+
+yarn develop
+yarn deploy

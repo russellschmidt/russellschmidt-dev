@@ -7,7 +7,7 @@ import Helmet from 'react-helmet';
 export default function Index({ data }) {
   const { edges: posts } = data.allMarkdownRemark;
   return (
-    <div class="container">
+    <div className="container">
       <div className="blog-posts">
         {posts
           .filter(post => post.node.frontmatter.title.length > 0)
