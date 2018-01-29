@@ -1,7 +1,13 @@
 ---
 path: "/hello-world"
-date: "2017-07-12T17:12:33.962Z"
-title: "My First Gatsby Post"
+date: "2018-01-28T17:12:33.962Z"
+title: "Gatsby Post No.1"
 ---
 
-Oooooh-weeee, my first blog post!
+Always nice to see something working out of the box.
+
+Big ups shout out mad respect honor from most high Jah Rastafari to this excellent resource [Creating a Blog with Gatsby](https://www.gatsbyjs.org/blog/2017-07-19-creating-a-blog-with-gatsby/) by Dustin Schau.
+
+All previous posts have been migrated over from my old Jekyll blog.
+
+I love you.

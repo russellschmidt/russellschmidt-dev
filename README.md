@@ -27,3 +27,8 @@ For an overview of the project structure please refer to the [Gatsby documentati
 * gatsby-plugin-react-helmet
 * gatsby-source-filesystem
 * gatsby-transformer-remark
+* gatsby-plugin-remark
+
+
+## Wanna Borrow This Project?
+[Here is a nice skeleton](https://github.com/dschau/gatsby-blog-starter-kit) from Dustin Schau

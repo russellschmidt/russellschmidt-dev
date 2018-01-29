@@ -1,4 +1,5 @@
 import React from "react";
+import Link from 'gatsby-link';
 import Helmet from "react-helmet";
 
 // import '../css/blog-post.css';
@@ -16,6 +17,9 @@ export default function Template({
           className="blog-post-content"
           dangerouslySetInnerHTML={{ __html: post.html }}
         />
+      </div>
+      <div className="link-back">
+        <Link to="/">Main</Link>
       </div>
     </div>
   )
