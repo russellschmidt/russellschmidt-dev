@@ -1,9 +1,9 @@
 ---
-layout: post
-title:  "Zombie Harnessing"
-date:   2016-05-13 15:50:11 -0700
-categories: Learn2Learn chunk chunking procrastination memory zombie
+path: "/zombie-harnessing"
+date: "2016-05-13T17:12:33.962Z"
+title: "Zombie Harnessing"
 ---
+
 Apropos to this course on learning how to learn, I learned that drawing things can help people remember.
 
 ## Gradualism

@@ -1,9 +1,9 @@
 ---
-layout: post
-title:  "Chunking"
-date:   2016-05-08 12:44:11 -0700
-categories: Learn2Learn chunk chunking
+path: "/chunking"
+date: "2016-05-08T17:12:33.962Z"
+title: "Chunking"
 ---
+
 Week Two of my pretty interesting Coursera course is about "chunks" and not this kind ![Truffle Shuffle Goonie Chunk](https://metrouk2.files.wordpress.com/2016/03/chunk_before.jpg). The chunks of which we speak are shorthand for small packages of information our minds can easily access. You can [Follow the Learning How To Learn class on Twitter](https://twitter.com/lhtl_mooc) and [Like them on Facebook](https://www.facebook.com/LHTOL).
 
 To take advantage of what I know now about the Pomodoro Technique and also the [Pomodoro App I built](http://pomodoro-timer-rs.herokuapp.com/) I am going to use this timer to alternate working on my Climate Cents rails project and then listen to my Coursera lectures.
@@ -12,7 +12,7 @@ To take advantage of what I know now about the Pomodoro Technique and also the [
 **Chunks** are compact pieces of info that your mind can process and recall. Learning to deal in chunks is to speak the lingua franca of the mind - your brain seems to work in chunks so that is what you should use. There are also **illusions of competence** in learning. These are ineffective study methods that waste your time. There is also **overlearning** that can ingrain information into your mind but overdoes the connection building, putting in ever-deeper ruts into your synapse connections. By contrast, **interleaving** provides variety in your studies, mixing it up as it were.
 
 ### BABY... RUTH
-Chunking is the mental leap we take where we pull the puzzle pieces into a whole, into a narrative. We need context to make sense of information and store it. Chunking unites bits of infomation together and assigns them meaning, putting them in context of other concepts and things you already know. 
+Chunking is the mental leap we take where we pull the puzzle pieces into a whole, into a narrative. We need context to make sense of information and store it. Chunking unites bits of infomation together and assigns them meaning, putting them in context of other concepts and things you already know.
 
 The working memory, the 4 chunks we can hold in our brain, in our prefrontal cortex, is presented whilei n focused mode as an octopus connecting the four temporary working memory to synapses and connections in your long term memory. Stress, fear and emotions damage the ability of the octopus to connect the working memory to long term memory.
 
@@ -23,7 +23,7 @@ Gaining expertise requires us to create conceptual chunks. These are mental leap
 Chunking helps the brain run more efficiently, because the concept can appear automatically without needing to recall all of the underlying details and memories.
 
 ### Makin' Chunkies
-Some analogies are when learning to play a song, you learn chords, or particular progressions first, building up bit by bit until you learn how to play the whole song. Similarly, when learning a sport, we drill on the little things like dribbling and throwing and build up to actually running plays and then playing the game. Ideally chunks become wholly subconscious, we simply know them. This is the point of the chunk - to get to a point where it is automatic to recall the chunk or the chunk activity. 
+Some analogies are when learning to play a song, you learn chords, or particular progressions first, building up bit by bit until you learn how to play the whole song. Similarly, when learning a sport, we drill on the little things like dribbling and throwing and build up to actually running plays and then playing the game. Ideally chunks become wholly subconscious, we simply know them. This is the point of the chunk - to get to a point where it is automatic to recall the chunk or the chunk activity.
 
 One danger in math and science is that we are provided worked out example problems. All too often students then become overreliant on the cookie cutter instructions and not enough aware about how to apply the principles being shown to other problems.
 
@@ -43,7 +43,7 @@ Bottom up learning is practice and repetition (focused attention) where we reall
 
 Top down learning is diffuse learning where we start to see the big picture, and where our new chunk relates to other chunks.
 
-Context shows where our chunk is relevant to other chunks, and for example, where to use the new chunk technique instead of some other chunked techniques. 
+Context shows where our chunk is relevant to other chunks, and for example, where to use the new chunk technique instead of some other chunked techniques.
 
 ### The Illusions of Competence
 For the record, I thought this was going to be about the [Dunning-Kruger effect](https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect), the 2016 internet's favorite concept to toss around. I have a relative that suffers from this in regards to economics, of which he knows nothing about but I majored in. Of course, I will opine on music and politics and then impose my own ignorant assumption of competence on someone else.

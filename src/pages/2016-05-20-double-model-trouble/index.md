@@ -1,9 +1,9 @@
 ---
-layout: post
-title:  "Double Model Trouble"
-date:   2016-05-20 09:15:00 -0700
-categories: climate cents climatecents rails ruby Model
+path: "/double-model-trouble"
+date: "2016-05-20T17:12:33.962Z"
+title: "Double Model Trouble"
 ---
+
 Want to attach a photo to a model? No problem. Pop the [Paperclip](https://github.com/thoughtbot/paperclip) gem into your project and rock out on the million tutorials for this. I actually really like the tutorial on building a Pinterest clone on [One Month Rails](https://onemonth.com/courses/one-month-rails/curriculum) if you want a step by step introduction to setting up Devise and Paperclip. It is not a free tutorial, and I am not getting paid to talk about it. Just a casual fan here. [Here is a free Paperclip tutorial](https://richonrails.com/articles/getting-started-with-paperclip) I liked a lot also. It fills in a couple of details that the Github documentation leaves out.
 
 What if I want to attach multiple photos? The way Paperclip works, it associates one image with one model object. So if I want multiple photos to be associated with each project, I would need either to create different attributes for each photo on my model, which with Paperclip is 4 attributes per, or create a new model, say, 'Images', and have Images belong to Projects. This dual model approach is more flexible, since I can just dynamically add photos, but also is a bigger pain in the ass to implement. My heart says dual model but my brain says additional attributes.

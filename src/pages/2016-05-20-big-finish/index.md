@@ -1,9 +1,9 @@
 ---
-layout: post
-title:  "Big Finish"
-date:   2016-05-20 20:50:11 -0700
-categories: learning learning2learn
+path: "/big-finish"
+date: "2016-05-20T10:12:33.962Z"
+title: "Big Finish"
 ---
+
 Some people with ischemic stroke where the right side of the brain is hit, they can still perform advanced math but lose perspective on whether the answer makes sense - they lose their 'smell test' as to whether things make sense.
 
 A lot of left brain / right brain writing in popular culture is garbage and has been debunked by research. We do know now that right brain thinking provides big picture insights and reality checks - a devil's advocate. The left side of the brain clings tenaciously to what we know, and interprets the world for us. We need both to navigate this small stupid life we lead. That is why reviewing homework helps activate other parts of the brain in addition to the chance of finding errors - we use our left side to focus and our right side to question our work.

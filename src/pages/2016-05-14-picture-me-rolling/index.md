@@ -1,9 +1,9 @@
 ---
-layout: post
-title:  "Picture Me Rolling"
-date:   2016-05-14 16:50:11 -0700
-categories: Ruby Rails imageMagick Paperclip CarrierWave DragonFly
+path: "/picture-me-rolling"
+date: "2016-05-14T17:12:33.962Z"
+title: "Picture Me Rolling"
 ---
+
 ![clippy](/images/clippy2.jpg) Time to add some images to a Ruby project that I am working on. I have a Projects model already that has some basic content. I want to enable people to upload images and associate them with a specific project. Later on, I hope to add in permissions so only Admins can access add/change/delete, and automate thumbnails so that on the /index page, relevant pictures show up automatically.
 
 ## Setup

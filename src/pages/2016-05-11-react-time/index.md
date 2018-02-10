@@ -1,9 +1,9 @@
 ---
-layout: post
-title:  "React Time"
-date:   2016-05-11 12:44:11 -0700
-categories: JavaScript React ReactJS React.js
+path: "/react-time"
+date: "2016-05-11T17:12:33.962Z"
+title: "React Time"
 ---
+
 I started to love Angular a little. I loved the ease of use, I loved the native-app-like feel. It hurts me to leave, after everything we went through. I still want to continue learning Angular and want to even do an additional Bloc project or my own project in Angular, perhaps, to stay sharp.
 
 But I want to work on Game Tree, and I want to learn more frameworks (technically React is a library not a framework but it smells like a framework).

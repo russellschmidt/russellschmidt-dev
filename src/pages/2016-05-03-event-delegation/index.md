@@ -1,9 +1,9 @@
 ---
-layout: post
-title:  "JS Event Delegation"
-date:   2016-05-03 12:44:11 -0700
-categories: JavaScript Event Delegation
+path: "/event-delegation"
+date: "2016-05-03T17:12:33.962Z"
+title: "Event Delegation"
 ---
+
 We are going to finally totally fix my carousel. I detailed the original issue [in this blog post a month ago](http://www.russellschmidt.net/jquery/click/javascript/portfolio/2016/04/05/Fixing-jQuery-Click.html).
 
 So here is my code with a hacky `off().on('click', function())` solution:
@@ -30,7 +30,7 @@ var cursorSetOverMainImage = function() {
 The problem with this solution is that its, well, sorta hacky with that on-off method use and also it *doesn't work all that well*. Sometimes clicks simply do not seem to register.
 
 ### Performance Problems
-The event delegation solution is pretty elegant. 
+The event delegation solution is pretty elegant.
 
 ```javascript
 var cursorSetOverMainImage = function() {
@@ -52,7 +52,7 @@ var cursorSetOverMainImage = function() {
 
 Basically, now I only fire the click event once, for the image (img) element, when that bubbles up. I leaned heavily on [jQuery documentation](https://api.jquery.com/mousemove/) for the solution.
 
-The problem though is that I am creating a real issue with performance. Just to get a single click to advance my carousel, I am creating dozens of browser events. Each movement across a pixel is creating a performance drag on the browser, and I am trying to listen to the new Radiohead with 1,000 tabs open and running a Jekyll and Rails server on separate windows and well my 2008 Mac Pro is feeling the heat and I am getting a spinning beach ball. 
+The problem though is that I am creating a real issue with performance. Just to get a single click to advance my carousel, I am creating dozens of browser events. Each movement across a pixel is creating a performance drag on the browser, and I am trying to listen to the new Radiohead with 1,000 tabs open and running a Jekyll and Rails server on separate windows and well my 2008 Mac Pro is feeling the heat and I am getting a spinning beach ball.
 
 ### Refactor for Performance
 So this is why Yahweh invented buttons. As cool as my pointer dogs are when they replace my cursor, its killing the performance of my portfolio and we don't need that. SPINNING BEACH BALL FROM MY PORTFOLIO SITE HIRE ME PLZ.
@@ -68,7 +68,7 @@ var nextProject = function(index) {
 };
 ```
 
-and here is the jQuery call 
+and here is the jQuery call
 
 ```javascript
 $(window).load(function(){
@@ -78,7 +78,7 @@ $(window).load(function(){
 });
 ```
 
-We now have a very syntactically compact, performant couple of function calls that are using event delegation per my mentor's guidance. I finally solved the problem of clicking once and advancing a seemingly random number of times due to the bubbling up effects, no more spinning beach ball, and the transitions are nice and snappy so the site presents itself, and represents me, better. 
+We now have a very syntactically compact, performant couple of function calls that are using event delegation per my mentor's guidance. I finally solved the problem of clicking once and advancing a seemingly random number of times due to the bubbling up effects, no more spinning beach ball, and the transitions are nice and snappy so the site presents itself, and represents me, better.
 
 Ah but there is trouble in paradise. Because I made the selectors `span` elements inside the `div`, an overeager clicker can double click the div and select the image and then everything gets weird. There is a simple CSS (I am using Sass but you get the idea) solution to this, and that is to make the image non-selectable.
 
@@ -87,7 +87,7 @@ Ah but there is trouble in paradise. Because I made the selectors `span` element
   width: $width-img-main * (5/6) + ($border-width-img-main * 2) + ($padding-width-img-main * 2);
   border: $border-width-img-main solid $grey-color-light;
   height: $height-img-main * (5/6) + ($border-width-img-main * 2) + ($padding-width-img-main * 2);
-  
+
   & img {
     padding: $padding-width-img-main;
     height: $height-img-main * (5/6);

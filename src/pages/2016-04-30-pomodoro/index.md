@@ -1,9 +1,9 @@
 ---
-layout: post
-title:  "Pomodoro"
-date:   2016-04-30 12:44:11 -0700
-categories: coursera learning Pomodoro
+path: "/pomodoro"
+date: "2016-04-30T04:12:33.962Z"
+title: "Pomodoro"
 ---
+
 Funny enough, I am taking this Coursera course on learning to learn at the same time that I am about to make an Angular app that is a Pomodoro timer. The stars are aligned.
 
 ## Pomodoro Technique

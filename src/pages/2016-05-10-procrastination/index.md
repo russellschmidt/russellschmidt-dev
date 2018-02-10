@@ -1,14 +1,14 @@
 ---
-layout: post
-title:  "Procrastination"
-date:   2016-05-10 15:50:11 -0700
-categories: Learn2Learn chunk chunking procrastination memory
+path: "/procrastination"
+date: "2016-05-10T17:12:33.962Z"
+title: "Procrastination"
 ---
+
 ### Tackling Procrastination
 We already know that Pomodoro (25 min on / 5 min off) helps fight procrastination and improves learning by alternating focused and diffuse states. There is much more to learn about Procrastination, of course, and we are going to dive in this week in [Coursera's Learning How To Learn](We already know that Pomodoro (25 min on / 5 min off) helps fight procrastination and improves learning by alternating focused and diffuse states. There is much more to learn about Procrastination, of course, and we are going to dive in this week in [Coursera's Learning How To Learn](https://www.coursera.org/learn/learning-how-to-learn) course.
 
 #### Why do I care
-Well you care because 
+Well you care because
 
 1. Procrastination is a really terrible habit to build
 2. Procrastination is like addiction neurologically
@@ -32,7 +32,7 @@ Habits have 4 parts
 ### Process versus Product
 Overcoming procrastination requires the following. First, accept your negative feelings, and know that it will get better once you get started. Focus on process and not product. Process is a behavior set against the flow of time. Product is the outcome. Process for me is coding for 25 minutes. Product is figuring out how to upload video to a rails project.
 
-Product intimidates and causes bargaining to start. Product is where pain is triggered that causes us to procrastinate. 
+Product intimidates and causes bargaining to start. Product is where pain is triggered that causes us to procrastinate.
 
 Process is focused on the moment. Pomodoro is process, a finite moment. The Zombie part of our brains loves process, our bodies are built to grind in small pieces and get in the flow. We can stop meta-thoughts about our progress and the amout of work left, or distractions. By focusing on the process, the time and not the output, we can build a habit and build that wall, brick by brick.
 

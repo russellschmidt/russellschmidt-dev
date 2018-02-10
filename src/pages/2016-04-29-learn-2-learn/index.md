@@ -1,9 +1,9 @@
 ---
-layout: post
-title:  "Learn2Learn"
-date:   2016-04-29 12:44:11 -0700
-categories: coursera learning
+path: "/learn-2-learn"
+date: "2016-04-29T17:12:33.962Z"
+title: "Learn2Learn"
 ---
+
 ![Sponge of Knowledge](/images/sponge.jpg) Because 11 open projects are not enough and because I hate free time, I am taking a [Coursera class on 'Learning How to Learn'](https://www.coursera.org/learn/learning-how-to-learn/home) for fun as well. Taught by Dr. Barbara Oakley of 'A Mind for Numbers' fame and Dr. Terrence Sejnowski of the Salk Institute, the idea is to learn better strategies for learning. In retrospect I should have taken this before beginning Bloc to turn me into a supersponge of knowledge.
 
 There are a couple of ways of learning: diffuse and focused. Focused thinking follows established pathways - these can be superhighways if you need to reuse that path or gutters if you are stuck in a certain way of thinking. When we are concentrating on something, we are in Focused mode. We can easily make analogies and metaphors to help us understand new problems - we are comparing patterns and applying them.

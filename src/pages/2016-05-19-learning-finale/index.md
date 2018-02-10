@@ -1,9 +1,9 @@
 ---
-layout: post
-title:  "Learning Finale"
-date:   2016-05-19 20:50:11 -0700
-categories: learning learning2learn
+path: "/learning-finale"
+date: "2016-05-19T17:12:33.962Z"
+title: "Learning Finale"
 ---
+
 > "All good things must come to an end" - *Geoffrey Chaucer*
 
 > Death is but a door time is but a window I'll be back - *Vigo the Carpathian*
