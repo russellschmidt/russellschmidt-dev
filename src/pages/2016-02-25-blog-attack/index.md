@@ -1,9 +1,9 @@
 ---
-layout: post
-title:  "Blog Attack"
-date:   2016-02-25 00:44:04 -0700
-categories: jekyll blog update
+path: "/blog-attack"
+date: "2016-02-25T17:12:33.962Z"
+title: "Blog Attack"
 ---
+
 They say to blog to improve my hire-ability. They say to blog to reveal my personality. They say blogging tracks my journey into programmer-hood. Well let's talk about blogging and what I am going to blog about.
 
 ## Meta

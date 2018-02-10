@@ -1,9 +1,9 @@
 ---
-layout: post
-title:  "New View for CC"
-date:   2016-05-20 09:16:00 -0700
-categories: climate cents climatecents rails ruby Views
+path: "/new-view-for-cc"
+date: "2015-11-13T17:12:33.962Z"
+title: "New View for CC"
 ---
+
 From my last blog post we saw that I had a lot of work left on this project.
 
 > **Remaining to do for Sunday:**

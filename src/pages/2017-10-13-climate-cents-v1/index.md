@@ -1,7 +1,7 @@
 ---
-path: "/climate-cents-v1"
+path: "/climate-cents-v101"
 date: "2017-10-13T17:12:33.962Z"
-title: "Climate Cents v1.01"
+title: "Climate Cents v1.0.1"
 ---
 
 ### Climate Cents 1.0.1

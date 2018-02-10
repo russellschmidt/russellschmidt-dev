@@ -1,8 +1,7 @@
 ---
-layout: post
-title:  "Troubleshooting with Rails!"
-date:   2015-12-11 13:22:08 -0700
-categories: Rails troubleshooting console terminal command-line
+path: "/troubleshooting-with-rails"
+date: "2015-12-11T17:12:33.962Z"
+title: "Troubleshooting with Rails"
 ---
 
 ## Troubleshooting with Rails.logger.info
@@ -16,7 +15,7 @@ Putting in Rails.logger.info *some_var* into your Ruby code will output that *so
 So for example, you can write Rails.logger.info @current_user.inspect to see the status of a currently logged in user while running, say, RSpec or playing with a live app on your local machine.
 
 ### iTerm Use Case
-In iTerm (or Terminal, or other command line du jure) you can type in 
+In iTerm (or Terminal, or other command line du jure) you can type in
 >>>
 $ tail -f log/test.log
 >>>

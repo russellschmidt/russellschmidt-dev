@@ -1,8 +1,7 @@
 ---
-layout: post
-title:  "Heap Delete"
-date:   2016-08-25 00:44:04 -0700
-categories: heap algorithm trees delete CRUD bloc SET
+path: "/heap-delete"
+date: "2016-08-25T17:12:33.962Z"
+title: "Heap Delete"
 ---
 
 ## Deleting a node in a min-heap

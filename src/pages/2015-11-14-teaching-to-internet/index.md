@@ -1,8 +1,7 @@
 ---
-layout: post
-title:  "Teaching to Internet"
-date:   2015-11-14 13:22:08 -0700
-categories: Chrysalis internet DTLA LosAngeles
+path: "/teaching-to-internet"
+date: "2015-11-14T17:12:33.962Z"
+title: "Teaching to Internet"
 ---
 
 ## Teaching To Internet
@@ -18,7 +17,7 @@ Outside of video games and very specialized software, I just don't see people ev
 Many elderly clients have a hard time with small boxes and small targets. The window resize arrows really bedevil a lot of clients on Windows machines. Given the prevalence of touch screens, it really does not make sense to make an app for a mass audience with tiny targets unless you are sure you have young, tech savvy users.
 
 ### Google-Fu
-Learning how to Google was something that came natural to me since I grew up with pre-Google awfulness of search aggregators. Becoming an efficient search query constructor was important if you ever wanted to find anything on the then still-infant internet. 
+Learning how to Google was something that came natural to me since I grew up with pre-Google awfulness of search aggregators. Becoming an efficient search query constructor was important if you ever wanted to find anything on the then still-infant internet.
 
 For people new to the internet, teaching them the basics of querying really comes down to concepts of filtering through the introduction of more (or fewer) terms to broaden the search, and the idea of using synonyms. Specific to the job search, knowing that there can be many words for a similar job can help people that haven't been trained to think hyperliterally like a computer. For example, I teach the clients to search for, say, "custodian", "janitor", "maid" and "cleaner" on a job site like [indeed.com](http://www.indeed.com).
 
@@ -30,6 +29,6 @@ Funny how learning to program has been the result of repetition and slogging thr
 ### Lessons for a Web, iOS Programmer
 Accessibility is the first thing out the window when I am making a new app - all those `alt` attributes are just annoying when I have a pile of images to deal with. It is natural to have urges to be lazy. That said, accessibility is so unbelievably important for people that literally cannot use your creation otherwise. Small icons, vague or missing directions, small targets and confusing layouts are extra difficult for people to use who have not been exposed to much technology.
 
-Dumping users into a control panel or profile that looks like a fighter jet cockpit inspires panic. Try to keep things simple and obvious. I think it is ok to hide options so long as the categorization is obvious. 
+Dumping users into a control panel or profile that looks like a fighter jet cockpit inspires panic. Try to keep things simple and obvious. I think it is ok to hide options so long as the categorization is obvious.
 
 The more we can make them feel like they are in a supportive, immersive environment the more likely they are to enjoy the app and use it again. Many people just want something simple and easy to use - a hammer instead of a Swiss Army Knife. It is easy to forget, when you have grown up with sites like Facebook, how impossibly busy and complicated that site actually is to someone new to computers, and that site has some of the brightest minds in the world working on it. Pop ups and alerts should really be used less than they are. People with little computer experience already feel like they broke something whenever they move the mouse. Anything that disrupts their flow can turn them off to computers.

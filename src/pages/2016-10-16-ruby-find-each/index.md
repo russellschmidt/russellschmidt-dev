@@ -1,11 +1,10 @@
 ---
-layout: post
-title:  "My Own Find Each"
-date:   2016-10-16 16:20:08 -0700
-categories: Ruby Method Find Find_Each Block Bloc Bloc.io
+path: "/my-own-find-each"
+date: "2016-10-16T11:12:33.962Z"
+title: "My Own Find Each"
 ---
 
-One of my current assignments from Bloc is implementing my very own `find_each` function. One of the beauties of Ruby is the ease at which you can iterate over collections. 
+One of my current assignments from Bloc is implementing my very own `find_each` function. One of the beauties of Ruby is the ease at which you can iterate over collections.
 
 ```ruby
 some_array = %w{apple banana corn dog ear}
@@ -32,12 +31,12 @@ someObjectList.each do |obj|
 end
 ```
 
-The blocks here are what is between the curlies {} and do/end pairs. We declare a temp variable representing the current element of the collection by putting it between pipes || (called the 'block parameter') and then run the code inside the do/end or curlies. Here, we had the code output something regarding the current element to console, but we could just as well output something random. 
+The blocks here are what is between the curlies {} and do/end pairs. We declare a temp variable representing the current element of the collection by putting it between pipes || (called the 'block parameter') and then run the code inside the do/end or curlies. Here, we had the code output something regarding the current element to console, but we could just as well output something random.
 
 There is nothing to a block! You've been using it all along. It is just some code you pass in to a do-end or {}.
 
 ### `&amp;Block`
-If you want to pass in a method to Ruby as an argument, you can! Why not? The `&amp;Block` syntax is pretty common in Ruby, so it is good for me to really get my head around this. 
+If you want to pass in a method to Ruby as an argument, you can! Why not? The `&amp;Block` syntax is pretty common in Ruby, so it is good for me to really get my head around this.
 
 We use `&amp;Block` to pass a reference to a block into the code. Here is an example I made from tooling around in irb.
 

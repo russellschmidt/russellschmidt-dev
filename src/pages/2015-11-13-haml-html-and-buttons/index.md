@@ -1,15 +1,14 @@
 ---
-layout: post
-title:  "HAML, HTML and Buttons"
-date:   2015-11-13 13:22:08 -0700
-categories: HAML HTML Buttons Rails Ruby erb
+path: "/HAML-HTML-and-Buttons"
+date: "2015-11-13T17:12:33.962Z"
+title: "HAML, HTML and Buttons"
 ---
 
 ## HAML, HTML and Buttons
 ### TL;DR [this](http://html2haml.herokuapp.com) is all you need
 I am in the middle of my bloc.io full stack apprenticeship and decided, with my mentor's blessing and encouragement, to kick things up a notch and try using HAML for all my projects. I am familiar already with ERB and wanted to, well, be lazy and stop closing my Ruby tags.
 
-All was alright in the world, and anyone who is starting out in Rails should at least check out HAML and SLIM to write HTML faster... until the button! The HTML for the button, which was going to pass a status message to the user, is ```html 
+All was alright in the world, and anyone who is starting out in Rails should at least check out HAML and SLIM to write HTML faster... until the button! The HTML for the button, which was going to pass a status message to the user, is ```html
 <button type= "button" data-dismiss="alert" class="close">&times;</button>
 ```
 My first thought was to use the rails helper ```button_to``` but that was a solid fail.  Implemented in HAML, that would look like

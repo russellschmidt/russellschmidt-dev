@@ -4,7 +4,6 @@ date: "2015-11-08T17:12:33.962Z"
 title: "Enough About Me"
 ---
 
-
 In 2013, I signed up for a class on Ruby on Rails with General Assembly. I completed the class, building a resume-making app [ResumeRobot](http://seito.co) that is still up today. It is flawed. It was my first anything really so please, be kind, rewind. I had a full time job as a CEO that needed my attention and promptly forgot everything, having moved on to PHP and design and digital marketing and DevOps and then mobile development with Swift and now I am back to Ruby as I made a huge career change, having sold my business.
 
 ### Enough About Me

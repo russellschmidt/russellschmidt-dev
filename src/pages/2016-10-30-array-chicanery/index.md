@@ -1,8 +1,7 @@
 ---
-layout: post
-title:  "Array Chicanery"
-date:   2016-10-18 16:20:08 -0700
-categories: Ruby Array
+path: "/array-chicanery"
+date: "2016-10-18T17:12:33.962Z"
+title: "Array Chicanery"
 ---
 
 ### Ruby's Sweet Sugar
@@ -25,11 +24,11 @@ sql = "UPDATE #{table} SET #{updates_array * ","} WHERE id = #{id};"
 connection.execute(sql)
 ```
 
-Two other things to note here are the string interpolation and the array multiplication. 
+Two other things to note here are the string interpolation and the array multiplication.
 
-The string interpolation should be familiar from working with Rails where we do this sort of thing all the time in our Views. `#{some_variable}` pulls code from the Ruby side of the house into a string in this example, or into HTML in Rails. 
+The string interpolation should be familiar from working with Rails where we do this sort of thing all the time in our Views. `#{some_variable}` pulls code from the Ruby side of the house into a string in this example, or into HTML in Rails.
 
-What was completely new to me was the `#{updates_array * ","}` - what the heck is going on here? In the example, `updates_array` is an array of strings, with each string equivalent to `some_key=some_value` so as to perform a SQL UPDATE command. So what gives with the multiplication? 
+What was completely new to me was the `#{updates_array * ","}` - what the heck is going on here? In the example, `updates_array` is an array of strings, with each string equivalent to `some_key=some_value` so as to perform a SQL UPDATE command. So what gives with the multiplication?
 
 ### Join or Die
 Well, it turns out that the multiplication and `","` are the equivalent of `join`! We could write this as `updates_array.join(",")` and also get an identical result. Using this syntax allows us to convert the array into a single set of comma-separated strings.

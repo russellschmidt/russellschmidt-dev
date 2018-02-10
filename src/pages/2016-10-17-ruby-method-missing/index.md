@@ -1,13 +1,12 @@
 ---
-layout: post
-title:  "Ruby Method Missing"
-date:   2016-10-17 16:20:08 -0700
-categories: Ruby Method Missing
+path: "/ruby-method-missing"
+date: "2016-10-17T17:12:33.962Z"
+title: "Ruby Method Mising"
 ---
 
 A little innocuous method `method_missing` snuck into a problem in my Bloc Software Engineering homework. Oh you know, just implement `method_missing` for a find() method in our ActiveRecord-ish ORM experiment. I was referred to [this link](http://rubylearning.com/satishtalim/ruby_method_missing.html) which is a nice, concise explanation.
 
-Saving you the click, basically the `method_missing` method is designed to deal with the `NoMethodError` exception that is raised when code calls a method that can't be found. Our `method_missing` function allows for a graceful exception handling and potential recovery. In my problem set, I am supposed to implement this such that `Entry.find_by(:name, name)` and `Entry.find_by_name(name)` produce identical results. 
+Saving you the click, basically the `method_missing` method is designed to deal with the `NoMethodError` exception that is raised when code calls a method that can't be found. Our `method_missing` function allows for a graceful exception handling and potential recovery. In my problem set, I am supposed to implement this such that `Entry.find_by(:name, name)` and `Entry.find_by_name(name)` produce identical results.
 
 A lovely example was presented but as is often the case, the example code is too simple for my tiny, dinosaur brain. I actually need to hop into IRB to understand it.
 
@@ -34,7 +33,7 @@ no fcks_given here
  => nil
  ```
 
- So this is the basic idea - we call a method that is not defined in the class, and we get a nice graceful message. 
+ So this is the basic idea - we call a method that is not defined in the class, and we get a nice graceful message.
 
  But I am supposed to be able to make a method `Entry.find_by_name(name)` fire off. Now note that only `find_by` exists in code. Naturally I need to do a bit more research to figure out the best approach for a solution.
 
@@ -58,7 +57,7 @@ So we can satisfy the problem set's solution and see how this method can serve t
 
 Per my amazing book on Eloquent Ruby, there is even more that you can do with `method_missing` besides customizing an already robust error catching method. You can also use `method_missing` for delegation.
 
-Let's say we have a class `Spreadsheet` and we also have a class `SecretSpreadsheet` that needs to authenticate the user attempting to view a `Spreadsheet` before handing off control. If `Spreadsheet` has 25 methods, we would need to write 25 methods in `SecretSpreadsheet` that first authenticate and then lastly pass off to the same-named method in `Spreadsheet` which is repetitive and lame. It does not scale well as a solution at all - every new method on `Spreadsheet` needs an analog method in `SecretSpreadsheet`. 
+Let's say we have a class `Spreadsheet` and we also have a class `SecretSpreadsheet` that needs to authenticate the user attempting to view a `Spreadsheet` before handing off control. If `Spreadsheet` has 25 methods, we would need to write 25 methods in `SecretSpreadsheet` that first authenticate and then lastly pass off to the same-named method in `Spreadsheet` which is repetitive and lame. It does not scale well as a solution at all - every new method on `Spreadsheet` needs an analog method in `SecretSpreadsheet`.
 
 So the solution is to use `method_missing` as a catch-all that will authenticate and then use our new best friend method `send` to call the method. This is an exceptional use case for `send` as obviously we can't call a method in the form of a variable in the syntax `@spreadsheet.variable_name` - we need to use `variable.send(method, *arguments)` and then we don't need to write 25 methods in `SecretSpreadsheet` - we only write what we need for the security routines and then pass the method and arguments onto our original `Spreadsheet` class. The trick is `send` allows us to call functions dynamically and programmatically.
 

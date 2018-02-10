@@ -1,8 +1,7 @@
 ---
-layout: post
-title:  "Video in HTML5"
-date:   2016-10-15 13:22:08 -0700
-categories: Web Video MP4 codec HTML HTML5
+path: "/video-in-html5"
+date: "2016-10-15T17:12:33.962Z"
+title: "Video in HTML5"
 ---
 
 For the Climate Cents site, we wanted full screen video at the top of each individual project page. Fortunately each partner has a high quality MP4 for us to use, so the hardest part - making the video - was already done for us.  All that remained was getting it on the site.
@@ -12,22 +11,22 @@ What is not to like? Drop in a simple tag and voila, you are playing video witho
 
 ### Cold Reality Hit Me In The Face
 
-The design spec was for the video to stretch across the top of the page and be responsive, which right away seemed to rule out hosting the video on YouTube. However, as I dug into what it took to get HTML5 video tags to work, YouTube or Vimeo hosting looked better by the minute. 
+The design spec was for the video to stretch across the top of the page and be responsive, which right away seemed to rule out hosting the video on YouTube. However, as I dug into what it took to get HTML5 video tags to work, YouTube or Vimeo hosting looked better by the minute.
 
-First off, cross-browser compatibility is an issue. To use video across major browsers, you need to include files in three formats at present: mp4 (using H264 codec), webm, and ogv. 
+First off, cross-browser compatibility is an issue. To use video across major browsers, you need to include files in three formats at present: mp4 (using H264 codec), webm, and ogv.
 
 [Miro Video Converter](http://www.mirovideoconverter.com/) is the solution to the multiple codec problem. I had mp4s of all my videos but needed to convert to the other formats, and Miro did that without any trouble, through converting to HD webm did take a bit more time than I thought it would.
 
 I loaded all the videos to Amazon S3 and made them public. The size of the videos made it impossible to upload to our dev machine on Heroku and based on what I read online, it was going to be hard to beat Amazon at the hosting media game in any event.
 
 #### Code Time
-I am going to refactor mny views in rails to get the video URLs into my model and then whitelist them in my controller. But this shows how the HTML can be structured to make it work. Inside the video tag, you stick your three source tags with the MIME type afterwards. 
+I am going to refactor mny views in rails to get the video URLs into my model and then whitelist them in my controller. But this shows how the HTML can be structured to make it work. Inside the video tag, you stick your three source tags with the MIME type afterwards.
 
 I decided that in 2016 I was not going to support Flash for non-HTML5 compliant browsers. I'm the only dev on this project and my to-do list is a mile long. However, [you can see an example here](https://css-tricks.com/snippets/html/video-for-everybody-html5-video-with-flash-fallback/) of how to do that.
 
 ```ruby
 <div class="content-wrapper project-show">
-  <video poster="<%= @project.pictures.first.image.url(:hero) %>" 
+  <video poster="<%= @project.pictures.first.image.url(:hero) %>"
     id="hero-image" class="project-video" height="400" width="100%">
     <source src="https://s3.amazonaws.com/climatecents/project-videos/BayFoundation-KelpDive.mp4" type="video/mp4"/>
     <source src="https://s3.amazonaws.com/climatecents/project-videos/ProductionOgv/BayFoundation-KelpDive.oggtheora.ogv" type="video/ogg" />
@@ -66,7 +65,7 @@ I tried the following:
 3. Set height to 400 in the HTML within the video tag
 4. Set height to 100% in the HTML
 5. Set max-height: 400px
-6. Do some funky, funky CSS positioning 
+6. Do some funky, funky CSS positioning
 
 ```css
 video {
@@ -85,7 +84,7 @@ Eventually I had the bright idea to use the internet and found that you can in C
 
 ```scss
 @media all and (-webkit-min-device-pixel-ratio:0)
-{  
+{
     .project-show #hero-image
     {
       object-fit: fill;
@@ -95,7 +94,7 @@ Eventually I had the bright idea to use the internet and found that you can in C
 
 And now I have a cool video that plays behind my nav, stays responsive, and is capped at a height of 400px to stay true to the original design and avoid an unseemly lightbox.
 
-#### HTML5 Video Resource Links 
+#### HTML5 Video Resource Links
 1. Great overview <http://www.htmlgoodies.com/html5/client/how-to-embed-video-using-html5.html#fbid=Ae_QzV1hg3y>
 2. AWS Information <http://www.sysmoth.com/streaming-videos-through-amazon-s3-cloudfront-and-html5/>
 3. Sample Code examples <http://callmenick.com/post/html5-video-jumpstart-examples>

@@ -1,7 +1,7 @@
 ---
 path: "/spooky-procs"
-date: "2017-10-13T17:12:33.962Z"
-title: "Climate Cents v1.01"
+date: "2017-10-31T17:12:33.962Z"
+title: "Spooky Procs"
 ---
 
 ### Spooky Procs

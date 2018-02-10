@@ -1,8 +1,7 @@
 ---
-layout: post
-title:  "React at Home"
-date:   2016-05-26 23:16:00 -0700
-categories: ReactJS React Development Environment Setup install tutorial
+path: "/react-at-home"
+date: "2016-05-26T17:12:33.962Z"
+title: "React At Home"
 ---
 
 This is a tutorial on installing React in a dev environment on my home machine. I really want to get to a point where I am installing this on Virtual Box running a Linux variant but I don't have that kind of time today. I stole all of the code and the idea and explanations from [Mastering React - React Fundamentals: Environment Setup](https://www.youtube.com/watch?v=0BHoz0ptv7k) so visit him and like his video.
