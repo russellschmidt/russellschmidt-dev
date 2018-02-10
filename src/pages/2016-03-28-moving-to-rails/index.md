@@ -1,18 +1,18 @@
 ---
-layout: post
-title:  "Moving ClimateCents to Rails"
-date:   2015-11-11 13:22:08 -0700
-categories: Rails WordPress Ruby Web ClimateCents
+path: "/moving-to-rails"
+date: "2016-03-28T17:12:33.962Z"
+title: "Moving to Rails"
 ---
+
 ### A New Hope
-Sadly, we reached the end of the road with the existing WordPress site. The type of site that everyone on the team wants is a single page application (for the most part) with really cool graphics and animations. We looked at the WordPress code and we would essentially have to start over with all of the custom work done to date. In addition, since I am the only developer on staff and we have some pretty ambitious timelines, there was a question of what is the fastest way to get the 2.0 out the door. Since we don't have access to the source files for a lot of things, I am left trying to do styling with minified CSS and JS files and a lot of commented out code but few comments. 
+Sadly, we reached the end of the road with the existing WordPress site. The type of site that everyone on the team wants is a single page application (for the most part) with really cool graphics and animations. We looked at the WordPress code and we would essentially have to start over with all of the custom work done to date. In addition, since I am the only developer on staff and we have some pretty ambitious timelines, there was a question of what is the fastest way to get the 2.0 out the door. Since we don't have access to the source files for a lot of things, I am left trying to do styling with minified CSS and JS files and a lot of commented out code but few comments.
 
 #### New Site Goals
 1. Excellent mobile experience
 2. Lots of data visualization for users
 3. Make it easy to share news, giving and other bragging rights
 4. Layer in a blogging platform
-5. Great sign in experience 
+5. Great sign in experience
 
 #### Process
 First, I decided to go with postgres for the development site. Worst case scenario, I can spin up a parallel Rails server with a different database, copy over the code and use that if I am forced to use MySQL for production (because [MediaTemple](https://mediatemple.net/) is our current host). I don't think that should be too much of an issue (nor should switching hosts be a concern) but its not my money. All in all, this is the sort of thing that makes Rails so fun for this stage of the game - the flexibility is pretty great, and you don't have to get married to a certain backend. Just don't get any production data in the db that you can't get out again.

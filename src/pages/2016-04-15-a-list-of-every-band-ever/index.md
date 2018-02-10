@@ -1,8 +1,7 @@
 ---
-layout: post
-title:  "A List of Every Band Ever"
-date:   2016-04-15 13:22:08 -0700
-categories: javascript Echo Alexa Amazon Skills
+path: "/a-list-of-every-band-ever"
+date: "2016-04-15T17:12:33.962Z"
+title: "A List of Every Band Every"
 ---
 
 ## Custom Slots

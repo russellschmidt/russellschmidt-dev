@@ -1,9 +1,9 @@
 ---
-layout: post
-title:  "Holstering Mandrill"
-date:   2016-04-29 08:54:11 -0700
-categories: Rails Ruby Ruby-on-Rails sendgrid mailgun email heroku
+path: "/holstering-mandrill"
+date: "2016-04-29T17:12:33.962Z"
+title: "Holstering Mandrill"
 ---
+
 In our last episode, I mentioned that Mandrill was no longer going to be available on a free tier. Mailchimp, maker of a beautiful email newsletter system, had bought dear Mandrill and is requiring users to have a paid Mailchimp account to use Mandrill. Not even mad but I am not spending $20 a month for a project that is firmly in an embryonic beta state.
 
 Heroku fortunately makes things pretty darn rootin tootin easy if you must leave the tender tendrils of the Mandrill. Options for leaving include Mailgun, Postmark, SendGrid and SparkPost, with the link to [Heroku here](https://blog.heroku.com/archives/2016/3/2/migrating_from_the_mandrill_add_on) if you didn't receive one of the many email notifications about the upcoming change.

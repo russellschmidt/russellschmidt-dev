@@ -1,9 +1,9 @@
 ---
-layout: post
-title:  "Angular Services 3"
-date:   2016-04-22 12:54:11 -0700
-categories: Angular angular.js javascript js services
+path: "/angular-services-3"
+date: "2016-04-22T17:12:33.962Z"
+title: "Angular Services 3"
 ---
+
 Been about 4 hours of Angular today which is not enough. I want to get two checkpoints done before I head out for a little fun tonight and that means...
 
 ### MORE ANGULAR

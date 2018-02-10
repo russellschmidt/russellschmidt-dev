@@ -1,9 +1,9 @@
 ---
-layout: post
-title:  "Designing my Concert Skill"
-date:   2016-04-07 16:20:00 -0700
-categories: Alexa Echo template skill voice javascript node.js node
+path: "/designing-my-concert-skill"
+date: "2016-04-10T17:12:33.962Z"
+title: "Designing My Concert Skill"
 ---
+
 # So I love live music
 Tonight, my wife and I are going to check out a pretty rad LA-based band called 'Youth Code' at my favorite concert venue. The band is just the sort of angry, noisy, industrial-punk-hardcore band with clever lyrics that I love. Here is their anti-vivisection video for [Consuming Guilt](https://www.youtube.com/watch?v=4h5uEPH5IFE) and [here](http://www.laweekly.com/music/youth-code-industrial-music-duo-are-an-unlikely-breakout-success-4416599) is an LA Weekly article about them. This [Vice article](http://noisey.vice.com/blog/youth-code-commitment-to-complications-interview) about them is also pretty entertaining. I prefer their sound to just about any other heavy band out there. I'm fanboy enough that I follow both members on Instagram like a teen.
 
@@ -15,7 +15,7 @@ I really want an Amazon Echo, and my wife thinks I spend too much on electronics
 2. My 'Bulldog Facts' skill needs to be approved and certified by Amazon
 3. I need to create and submit an original skill that is approved and certified by Amazon
 
-In addition, I had some exposure to JSON APIs in my Swift class from a couple years back and in one particular Rails Foundation checkpoint with Bloc, but I ran out of time before I was able to do the JSON Rails checkpoint. (I still have a plan to go back and do it one day, maybe between quarters with Bloc.) I would really like to create a skill that can pull data from an API. 
+In addition, I had some exposure to JSON APIs in my Swift class from a couple years back and in one particular Rails Foundation checkpoint with Bloc, but I ran out of time before I was able to do the JSON Rails checkpoint. (I still have a plan to go back and do it one day, maybe between quarters with Bloc.) I would really like to create a skill that can pull data from an API.
 
 ## When is the next concert
 Using the 'Bands in Town' [concert API](https://www.bandsintown.com/api/1.0/best_practices) I ought to be able to ask my future Amazon Echo about upcoming concerts. The API currently provides JSON and XML. Since I have had positive experiences with JSON and suffer from nightmares from programming Polycom, Snom and Aastra (now Mitel) IP telephones using XML, I am going to stick with JSON.
@@ -66,7 +66,7 @@ One consideration from the [Amazon Skills Kit Voice Design Best Practices](https
 One thing I am not sure about is if I need a 'main menu' type reset command to start over, or if the flow of intents as set by the internal logic of the program overrides this. I always hated this sort of thing as a user so will try to avoid creating this.
 
 ### Slots, both Custom and Built-in
-**Slots** are Echo Skill-speak for variables. These are a special brand of variable. Amazon defines them as 
+**Slots** are Echo Skill-speak for variables. These are a special brand of variable. Amazon defines them as
 
 >"an argument to an intent that gives Alexa more information about that request. For example: “Alexa, ask History Buff what happened on June third”. In this statement, “June third” is the value of a date slot that refines the request.
 

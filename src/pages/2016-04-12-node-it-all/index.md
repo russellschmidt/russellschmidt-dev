@@ -1,9 +1,9 @@
 ---
-layout: post
-title:  "Node it all"
-date:   2016-04-12 16:20:00 -0700
-categories: node.js node javascript amazon echo framework frontend
+path: "/node-it-all"
+date: "2016-04-12T17:12:33.962Z"
+title: "Node it All"
 ---
+
 Today is a big day. The day I start writing my very own Skill without really relying too much on the existing Amazon examples. To do so involves downloading and running Node.js.
 
 What is Node.js you ask? You can check [Node.js](https://nodejs.org/en/about/) and learn that it is an open source platform 'designed to build scalable network applications.' Node.js is [very popular](http://siliconangle.com/blog/2016/04/12/node-js-drives-iot-app-development-container-adoption/) with 3.5 million deployments, including quite a few 'Internet of Things' device deployments, including my new best friends at Amazon with their awesome Echo device. The article linked mentions Node as a universal platform, with some 58 percent of devs writing Node applications in a Docker container.

@@ -1,9 +1,9 @@
 ---
-layout: post
-title:  "Services with Angular"
-date:   2016-04-21 14:22:08 -0700
-categories: Angular angular.js javascript js services
+path: "/services-with-angular"
+date: "2016-04-21T17:12:33.962Z"
+title: "Services with Angular"
 ---
+
 After a couple of weeks on the Alexa projects, I am back in Angular land. It has been a rough landing. I am having to relearn a lot of things that I would not say I knew all that well at the time I started. If I could do it over again, I would not abandon a project midway again - I would have switched to Alexa after completing Angular. To compensate, I am taking a Codecademy course on Angular at the same time that I am knee deep in the muck.
 
 ### Services
@@ -44,7 +44,7 @@ The five recipes, all cribbed liberally from [here](http://learn-angular.org/#!/
     return someIsh;
   }])
   ```
-  
+
 3) **Service Recipe** Returns (or 'exposes') an object. There will be two parts to this - the declaration where we name the recipe and associate the object with it, and the object declaration itself. Based on Angular design principles that have trickled into my brain I suppose we keep these separate. Declare with:
 
   ```javascript

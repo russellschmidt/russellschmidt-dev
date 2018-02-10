@@ -1,9 +1,9 @@
 ---
-layout: post
-title:  "It's all so Meta"
-date:   2016-04-21 11:09:08 -0700
-categories: liquid markdown jekyll
+path: "/escaping-double-curlies"
+date: "2016-04-21T17:12:33.962Z"
+title: "Escaping Double Curlies"
 ---
+
 Just lost an hour of my life trying to output double curly brackets from a Jekyll blog post in markdown to my blog. Angular relies on double curlies. Go uses double curlies. Liquid uses double curlies. Jekyll uses double curlies. I want to show my double curlies.
 
 The issue is double curly brackets `{% raw %}{{ site.dlcb site.drcb }}{% endraw %}` are interpreted in liquid as interpolation so your curlies will (a) disappear on screen and (b) be interpreted as variables which is a real problem - it was crashing my blog!

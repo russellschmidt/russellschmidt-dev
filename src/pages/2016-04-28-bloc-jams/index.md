@@ -1,9 +1,9 @@
 ---
-layout: post
-title:  "Bloc Jams"
-date:   2016-04-28 12:54:11 -0700
-categories: Angular angular.js javascript js services
+path: "/bloc-jams"
+date: "2016-04-28T17:12:33.962Z"
+title: "Bloc Jams"
 ---
+
 Finally finished refactoring the Bloc Jams music player into Angular. You can [find it here](ancient-peak-81208.herokuapp.com) and turn those speakers way way up.
 
 #### Keep the Node Alive
@@ -43,4 +43,4 @@ Some ideas from Bloc were creating user profiles, sharing music and creating pla
 #### Future tech project
 I have 6 apps now on Heroku that I am proud of and wished were all up and running. I have the one I am paying for - climatecents.org - which is a long-term project I am on, and then 3 of the free plans.
 
-At $7 a month per app, I would be paying $21 a month to host the three extra apps. I wonder at what point I should be looking at a Digital Ocean or other inexpensive VPS solution. Since I am rich in old laptops and computers, I also might want to self host with a static IP, though that is a very old school solution and will not have great performance over my internet with its not incredible upload speeds. 
+At $7 a month per app, I would be paying $21 a month to host the three extra apps. I wonder at what point I should be looking at a Digital Ocean or other inexpensive VPS solution. Since I am rich in old laptops and computers, I also might want to self host with a static IP, though that is a very old school solution and will not have great performance over my internet with its not incredible upload speeds.

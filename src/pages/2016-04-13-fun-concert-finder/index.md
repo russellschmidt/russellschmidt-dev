@@ -1,9 +1,9 @@
 ---
-layout: post
-title:  "A Fun Concert Finder"
-date:   2016-04-13 16:20:00 -0700
-categories: Alexa Echo skill voice javascript node.js node funConcertFinder
+path: "/fun-concert-finder"
+date: "2016-04-13T17:12:33.962Z"
+title: "Fun Concert Finder"
 ---
+
 # The making of FunConcertFinder
 I have had a couple of days to mull over this project and I think that I am ready to dive in. I am writing this post to help me document my thought process and also assist me in thinking through the process of developing this app.
 

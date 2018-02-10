@@ -1,9 +1,9 @@
 ---
-layout: post
-title:  "Bernie App"
-date:   2016-04-20 13:22:08 -0700
-categories: Bernie app website ios android
+path: "/bernie-app"
+date: "2016-04-20T17:12:33.962Z"
+title: "Bernie App"
 ---
+
 # Feel the Bern
 I recently jumped at the chance to work on a dating app for supporters of Bernie Sanders. [The Bernie App](http://www.bernieapp.com/) features a website made by yours truly with a Web Developer credit and - so far - good feedback.
 

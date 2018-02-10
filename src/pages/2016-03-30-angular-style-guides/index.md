@@ -1,12 +1,12 @@
 ---
-layout: post
-title:  "Angular Style Guides"
-date:   2016-03-30 13:22:08 -0700
-categories: JavaScript Angular Style Guide Google
+path: "/angular-style-guides"
+date: "2016-03-30T17:12:33.962Z"
+title: "Angular Style Guides"
 ---
+
 ### Some thoughts on Angular Style Guides.
 
-I read one from one of my new favorite software bloggers, Todd Motto! [toddmotto.com](https://toddmotto.com/opinionated-angular-js-styleguide-for-teams/) . 
+I read one from one of my new favorite software bloggers, Todd Motto! [toddmotto.com](https://toddmotto.com/opinionated-angular-js-styleguide-for-teams/) .
 
 Also I read this much esteemed gentleman John Papa's [Angular Style Guide](https://github.com/johnpapa/angular-styleguide).
 
@@ -65,5 +65,5 @@ There is overlap here with Mr. Papa, but nevertheless some of the style concepts
 10. One role, one file. Keep everything encapsulated and bite-sized.
 11. Dont use $ or $$ to start a variable or other custom name
 
-#### Wrapping up 
+#### Wrapping up
 I am just beginning my Angular journey and these posts are far more for me than for you. I think the newest thing to get used to is the getter syntax and being more strict about keeping functions short and making more files. For whatever reason I thought there was a performance price to be paid there but none of these far, far more accomplished and knowledgeable people seem to give a care.

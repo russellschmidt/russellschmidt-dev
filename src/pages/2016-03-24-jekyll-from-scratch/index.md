@@ -1,12 +1,12 @@
 ---
-layout: post
-title:  "Jekyll From Scratch"
-date:   2016-03-24 13:22:08 -0700
-categories: Ruby Jekyll blogging portfolio html
+path: "/jekyll-from-scratch"
+date: "2016-03-24T17:12:33.962Z"
+title: "Jekyll From Scratch"
 ---
+
 I was turned onto [Jekyll](https://jekyllrb.com/) by my Bloc mentorship, where they suggested we students use it for our portfolios and then upload to Github Pages. I was a little apprehensive at first about my brain exploding from learning a new framework, but had grown to love markdown and Byword for my blog v1.0 (written in PHP).
 
-I checked out Jekyll, since redoing my blog and personal portfolio was long overdue anyway, and really liked a few things. 
+I checked out Jekyll, since redoing my blog and personal portfolio was long overdue anyway, and really liked a few things.
 1. No database. You upload text files in markdown for blog posts with a little bit of text at the top.
 2. Markdown. Sweet. I hated blogging using a CMS, where I would hit backspace or whatnot and lose a draft. Or cutting and pasting where the formatting was an issue.
 3. Simple integration to GitHub Pages. I own my own domain with hosting but would love to use git to update directly instead of the FTP upload extra step. There was some nominal savings there but the time spent fiddling with files was more expensive.
@@ -17,12 +17,12 @@ The Bloc program had a couple of great templates to use but my gut instinct work
 2. There is a lot of extra stuff in there I won't use - let's get minimalist
 3. Oh I see that easy path over there. No, let's make this as difficult as possible.
 
-This did make me wonder why CS and bootcamp programs don't teach Jekyll first. This is such a pleasant, easy-to-understand framework compared to Rails et al. 
+This did make me wonder why CS and bootcamp programs don't teach Jekyll first. This is such a pleasant, easy-to-understand framework compared to Rails et al.
 
 ## Rabbit Hole 1.0
 My Mentor naturally was supportive of my gumption and as I was literally months ahead of schedule with the Front End part of Bloc, I didn't see a downside. I stood up a working, atrociously ugly blog right away, using the `Jekyll new` command which I consider equivalent to using scaffolding in Rails. Everyone who is a cool Rails developer tells me to hand code this stuff while they ride their fixie to Burning Man after picking up some home brewed beer using a robot they built with a 3-D printer and some wood hand-lathed at a workshop in Venice. So naturally I saw my ugly, functional duckling and hated my own creation.
 
-A bigger problem though was that I wanted to use [Flex-Grid](https://flex-grid.com) but it didn't have a Jekyll plugin (not a flood of Jekyll plugins out there relative to a blue chip framework or library but they exist).  I found some CSS to copy in but then I realized that with the way FlexGrid works, I would not be able to turn my Ruby loop spitting out blog post links into multiple columns. 
+A bigger problem though was that I wanted to use [Flex-Grid](https://flex-grid.com) but it didn't have a Jekyll plugin (not a flood of Jekyll plugins out there relative to a blue chip framework or library but they exist).  I found some CSS to copy in but then I realized that with the way FlexGrid works, I would not be able to turn my Ruby loop spitting out blog post links into multiple columns.
 
 _Time burned: 20 hours_
 
@@ -72,9 +72,9 @@ For the style, I have  are a few steps in mind.
 Remember too that there is styling for the main page and for the blog posts.
 
 ### Back in Action Jackson
-Not quite. Now I am getting an error `Base-level rules cannot contain the parent-selector-referencing character '&'. on line 123` which is the mixins. I have no idea what this means. A quick'n'dirty workaround is dumping SASS for the [compiled CSS](https://github.com/VladShcherbin/flex-grid/blob/master/dist/flex-grid.css). That will hard code all the variables and is also 900 something lines of code long, so not so fun to work with. 
+Not quite. Now I am getting an error `Base-level rules cannot contain the parent-selector-referencing character '&'. on line 123` which is the mixins. I have no idea what this means. A quick'n'dirty workaround is dumping SASS for the [compiled CSS](https://github.com/VladShcherbin/flex-grid/blob/master/dist/flex-grid.css). That will hard code all the variables and is also 900 something lines of code long, so not so fun to work with.
 
-So `&` is just shorthand for the parent selector - so you could write 
+So `&` is just shorthand for the parent selector - so you could write
 `a.my-link {
 	color: red;
 	&:hover {
@@ -83,23 +83,23 @@ So `&` is just shorthand for the parent selector - so you could write
 }`
 and the & represents the a.my-link element(s). Awesome.  H/T to [http://www.joeloliveira.com/2011/06/28/the-ampersand-a-killer-sass-feature/](http://www.joeloliveira.com/2011/06/28/the-ampersand-a-killer-sass-feature/).
 
-The error I am getting is saying that I am using the & at a top level - I could be referring to a parent that doesn't exist (sad emoji for orphans).  So I need to make sure that the & are inside a selector block. Of course, it looks like they are, and I have no idea where the $class variable they are all referencing as a parent element is coming from despite CMD-Fing all over the place. 
+The error I am getting is saying that I am using the & at a top level - I could be referring to a parent that doesn't exist (sad emoji for orphans).  So I need to make sure that the & are inside a selector block. Of course, it looks like they are, and I have no idea where the $class variable they are all referencing as a parent element is coming from despite CMD-Fing all over the place.
 
 _Additional Time Burned:_ 3 hours of overtired inattentive coding.
 
 ### Take 4. Form Follows Function.
- So I learned some SASS, got to admire flex-grid, and realize I just need a g-d grid in here to get going. I literally have nothing but a list of blog posts and some social links. 
+ So I learned some SASS, got to admire flex-grid, and realize I just need a g-d grid in here to get going. I literally have nothing but a list of blog posts and some social links.
 
-Flex-grid is built off of Bootstrap, and Bootstrap is everyone's pal, with a huge number of integrations. My downside is that Bootstrap gives me more than I need, and that it is so popular that I feel a little "basic" shall we say in using it. My upside is that I am letting the perfect be the enemy of the good and burning daylight putzing around with a grid framework that isn't made for Jekyll. Decision made, and form shall follow function. 
+Flex-grid is built off of Bootstrap, and Bootstrap is everyone's pal, with a huge number of integrations. My downside is that Bootstrap gives me more than I need, and that it is so popular that I feel a little "basic" shall we say in using it. My upside is that I am letting the perfect be the enemy of the good and burning daylight putzing around with a grid framework that isn't made for Jekyll. Decision made, and form shall follow function.
 
-Since Jekyll uses Ruby and SASS (as opposed to LESS) we are going to use the power of Google to figure out what to do. [Boom](http://veithen.github.io/2015/03/26/jekyll-bootstrap.html). 
+Since Jekyll uses Ruby and SASS (as opposed to LESS) we are going to use the power of Google to figure out what to do. [Boom](http://veithen.github.io/2015/03/26/jekyll-bootstrap.html).
 
 I deleted the flex-grid and mixin SASS files, and followed the instructions per the link on adding the SASS for Bootstrap. Holy crap everything worked i.e. no crash, dev site looks identical.
 
-Last cleanup item before we can finally get into the grid is the variables file. There are some helpful variables that came with the `new` Jekyll command that are laced throughout the SASS. Bootstrap will have some also. So I am going through these and eliminating duplication. Basically all the Flex-Grid sizing had to go, in favor of the Bootstrap. No breaks again. 
+Last cleanup item before we can finally get into the grid is the variables file. There are some helpful variables that came with the `new` Jekyll command that are laced throughout the SASS. Bootstrap will have some also. So I am going through these and eliminating duplication. Basically all the Flex-Grid sizing had to go, in favor of the Bootstrap. No breaks again.
 
 ### Grid my Girded Loins
-We want a page that is two columns. 1/3 - the space on the left - is our menu and nav in a single column. We'll have a fun color, perhaps. The rest is a white column. This will be for content. I went through and changed all the `wrapper` classes to `container-fluid` to be Bootstrap-compliant (bootstrapped?). 
+We want a page that is two columns. 1/3 - the space on the left - is our menu and nav in a single column. We'll have a fun color, perhaps. The rest is a white column. This will be for content. I went through and changed all the `wrapper` classes to `container-fluid` to be Bootstrap-compliant (bootstrapped?).
 
 The header and footer are likely, eventually, going to be deleted but I will leave them in there for now, changing out `wrapper` and pouring out a 40 for them.
 
@@ -111,7 +111,7 @@ Found an excellent, simple accordian tutorial that I used as a jumping off point
 ### Cleanup
 And now it is just a matter of porting over the exisitng JS from the sorta working first site that was guilty of ugliness, adding content (case studies), styling the blog posts and making the project slideshow automated with a timer.
 
-Other challenges I want to tackle before I consider this project done include: 
+Other challenges I want to tackle before I consider this project done include:
 * Adding more social links for other sites I am on
 * Mobile/responsive solutions to the accordian. I want to flip it from horizontal to vertical accordion action.
 
@@ -119,8 +119,8 @@ But [russellschmidt.net](http://www.russellschmidt.net) is well on its way.
 
 _Total Time Burned to Date:_ 36 Hours
 
-_Additional Time Required:_ 4 hours (estimated) 
+_Additional Time Required:_ 4 hours (estimated)
 
 
 
- 
+

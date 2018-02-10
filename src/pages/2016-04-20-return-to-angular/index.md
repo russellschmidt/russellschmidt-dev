@@ -1,9 +1,9 @@
 ---
-layout: post
-title:  "Return to Angular"
-date:   2016-04-20 14:22:08 -0700
-categories: Angular angular.js javascript js
+path: "/return-to-angular"
+date: "2016-04-20T04:20:00.962Z"
+title: "Return to Angular"
 ---
+
 This post is more appropriate for me and not you. Unless you, like me, are learning Angular and want all the pieces to fit in your brain.
 
 We have a file `app.js` that has a module named 'myApp' instantiated to app. A module contains the different AngularJS components.
@@ -81,7 +81,7 @@ $scope.products =
       name: 'Program or be Programmed',
       price: 8,
       pubdate: new Date('2013', '08', '01'),
-      cover: 'img/program-or-be-programmed.jpg'  
+      cover: 'img/program-or-be-programmed.jpg'
     }
   ]
 }]);

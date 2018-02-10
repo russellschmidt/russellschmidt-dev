@@ -1,8 +1,7 @@
 ---
-layout: post
-title:  "Skill-based Skill"
-date:   2016-04-07 13:22:08 -0700
-categories: Amazon Alexa SDK Skill Echo trivia fact facts template
+path: "/skill-based-skill"
+date: "2016-04-06T17:12:33.962Z"
+title: "Skill-Based Skill"
 ---
 
 # Echo Applications Part Two
@@ -17,7 +16,7 @@ After cloning the repo into your own Github world and local machine, you will wa
 The code in index.js can be thought of as:
 1. Your app ID
 2. Your array of facts
-3. The pre-loaded functions 
+3. The pre-loaded functions
 
 #### 1. App ID
 You will only obtain the app ID once you have logged into the Amazon Developer Portal and gone through and made your app and saved all of the features. However, per the instructions in 'Sending Code to Amazon' below, you need to upload your code at a step well before you complete the Developer steps. My advice - upload what you've got, and then once through the ringer, update the app ID and re-upload the ZIP file. Note that the app ID is a string so should be in quotes.
@@ -30,13 +29,13 @@ Be sure to find and replace the SPACE_FACTS with a more meaningful name given yo
 #### 3. Pre-Loaded Functions
 At the bottom of the file lies the actual meat and potatoes of the thing. While the Amazon tutorial goes over this all in some detail, you will want to go over and understand what the various functions are doing, as they are not too complicated and give some insight into how this all works.
 
-First, find and replace the `SpaceGeek` object name with something more appropriate. Be mindful that there is also an instance of `spaceGeek` that is, well, instantiated at the bottom of the file. My find and replace in Atom and Brackets also changed this instance variable into the object name without being mindful of the difference in case and caused an error. 
+First, find and replace the `SpaceGeek` object name with something more appropriate. Be mindful that there is also an instance of `spaceGeek` that is, well, instantiated at the bottom of the file. My find and replace in Atom and Brackets also changed this instance variable into the object name without being mindful of the difference in case and caused an error.
 
 Second, note that there is some dialog and comments that reference the template's spacey subject matter. You will want to replace this with something appropriate to your topic, especially the Alexa dialog prompts. Amazon notes that they will not certify your Skill if these are not changed.
 
 Third, just note especially the 'intentHandlers' object added to your object prototype. These four functions are the overriding logic of your Skill. The three that start with `AMAZON.` are preformatted intents (learn more [here](https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/implementing-the-built-in-intents)) called 'built-in intents'.  An intent is a spoken user instruction. I am hazarding that they are called intents because there is a some degree of give Amazon has built in to mirror the variations found in human language.
 
-Amazon helpfully provides pre-canned responses tied to actions already - for example, launching and closing a skill are covered by the built-in intents. The four intent handlers here all launch a function based on what the user said to enable the skill to work.  Help, start and stop are covered, so all that remains is for the skill to issue new facts. I can see why diagramming out the skill and using pseudocode would be very helpful for 
+Amazon helpfully provides pre-canned responses tied to actions already - for example, launching and closing a skill are covered by the built-in intents. The four intent handlers here all launch a function based on what the user said to enable the skill to work.  Help, start and stop are covered, so all that remains is for the skill to issue new facts. I can see why diagramming out the skill and using pseudocode would be very helpful for
 
 #### New Facts
 In `handleNewFactRequest()` you can see how facts are spoken to users.
@@ -54,12 +53,12 @@ function handleNewFactRequest(response) {
 }
 ```
 
-Pretty straightforward. Of course this is after I made my changes to my bulldog fact Skill. The function pulls a random number from zero to your array length - 1 (Math.floor rounds down), and then calls that array item via the index number. 
+Pretty straightforward. Of course this is after I made my changes to my bulldog fact Skill. The function pulls a random number from zero to your array length - 1 (Math.floor rounds down), and then calls that array item via the index number.
 
-### Sending Code to Amazon 
+### Sending Code to Amazon
 You will want to read [this indispensable resource](https://github.com/amzn/alexa-skills-kit-js/blob/master/samples/spaceGeek/FactSkillTemplate/Alexa_Skills_Kit_Template_Step-By-Step_Tutorial.pdf) to get going. It provides some nice hand holding.
 
-There are two separate portals you need to navigate. The first is the AWS Lambda side, where your skill is hosted. Think of Lambda as an on-demand code hosting service that takes care of all the environmental issues for you, so you can just upload your code and not worry about operating systems or anything else in the stack, really. Once you have uploaded and provisioned your skill, you can turn to the Developer portal, where you fill in the client-facing part of the deal and perform some testing. It would be fair I think to consider the Developer portal the front end, and the AWS portal as the back end.  
+There are two separate portals you need to navigate. The first is the AWS Lambda side, where your skill is hosted. Think of Lambda as an on-demand code hosting service that takes care of all the environmental issues for you, so you can just upload your code and not worry about operating systems or anything else in the stack, really. Once you have uploaded and provisioned your skill, you can turn to the Developer portal, where you fill in the client-facing part of the deal and perform some testing. It would be fair I think to consider the Developer portal the front end, and the AWS portal as the back end.
 
 Some key things to write down are your:
 * Skill name: **BulldogFactsSkill**
@@ -91,7 +90,7 @@ Suddenly coding sounds like a Jane Austin novel. Again, intents are pretty vital
 
 So we have three built-in intents and then our GetNewFactIntent, which is going to handle all the different ways a user can ask for a fact. However, unlike the off-the-rack solutions, the Skill has no idea what these GetNewFactIntents are, i.e. what words the users say to make a new fact appear. We are going to have to code this bit in the Utterances section.
 
-This is just one part of my utterances - I would highly recommend copying this down outside of the Amazon Developer interface for future reference. I put my entire intent and utterance list in the `README.md` in GitHub for  future reference. 
+This is just one part of my utterances - I would highly recommend copying this down outside of the Amazon Developer interface for future reference. I put my entire intent and utterance list in the `README.md` in GitHub for  future reference.
 
 ```
 etNewFactIntent a fact
@@ -109,7 +108,7 @@ GetNewFactIntent teach me a fact about bullies
 GetNewFactIntent teach me a fact for a bulldogger
 ```
 
-I hope it is obvious that what we do here is take out intent and then add in the language that triggers that intent. If you can imagine the user asking, "Alexa, have Fun Bulldog Facts ..." as the stand-in for `getNewFactIntent` you can start to imagine how these should be written. What becomes an interesting exercise is trying to form an exhaustive list of ways people ask for information. Tell, show, give, gimme, get, list, explain, say, speak, teach... all of these verbs can be used in the context of getting the Echo to spit out a crucial fact about Bulldogs. In addition, then you have pronouns (us, me), differences in how we talk to Alexa, if we ask questions (the interrogative) or issue orders (imperative tense), and whether we want to offer options in slang or colloquial language. I came up with about 80 ways for users to ask for a new fact. The [guide](https://developer.amazon.com/appsandservices/solutions/alexa/alexa-skills-kit/docs/defining-the-voice-interface ) mentions that single key words can be used so that they catch all these variations (think "fact" or "trivia" in this case) since I am really a one-trick pony, spitting up Bulldog facts at random.  Amazon's example is 
+I hope it is obvious that what we do here is take out intent and then add in the language that triggers that intent. If you can imagine the user asking, "Alexa, have Fun Bulldog Facts ..." as the stand-in for `getNewFactIntent` you can start to imagine how these should be written. What becomes an interesting exercise is trying to form an exhaustive list of ways people ask for information. Tell, show, give, gimme, get, list, explain, say, speak, teach... all of these verbs can be used in the context of getting the Echo to spit out a crucial fact about Bulldogs. In addition, then you have pronouns (us, me), differences in how we talk to Alexa, if we ask questions (the interrogative) or issue orders (imperative tense), and whether we want to offer options in slang or colloquial language. I came up with about 80 ways for users to ask for a new fact. The [guide](https://developer.amazon.com/appsandservices/solutions/alexa/alexa-skills-kit/docs/defining-the-voice-interface ) mentions that single key words can be used so that they catch all these variations (think "fact" or "trivia" in this case) since I am really a one-trick pony, spitting up Bulldog facts at random.  Amazon's example is
 
 >For instance, if you have “what’s the weather,” consider also just “weather”
 

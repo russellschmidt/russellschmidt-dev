@@ -1,9 +1,9 @@
 ---
-layout: post
-title:  "Angular Services 2"
-date:   2016-04-22 14:22:08 -0700
-categories: Angular angular.js javascript js services
+path: "/angular-services-2"
+date: "2016-04-22T17:12:33.962Z"
+title: "Angular Services 2"
 ---
+
 As I march through the services swamp in Angular, I am picking up some information that may or may not be of help to anyone, but that I want to commit to written form.
 
 Understanding that Controllers are mere objects (as is everything else) demystifies a lot of their operation for me. You can add new methods and variables at will, and refactor later if need be. If everything is hooked up right this gives your view template visibility to the controller subcomponents.
