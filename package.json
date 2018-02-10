@@ -8,8 +8,8 @@
     "gatsby-link": "^1.6.34",
     "gatsby-plugin-catch-links": "^1.0.15",
     "gatsby-plugin-react-helmet": "^2.0.4",
-    "gatsby-source-filesystem": "^1.5.15",
-    "gatsby-transformer-remark": "^1.7.30",
+    "gatsby-source-filesystem": "^1.5.18",
+    "gatsby-transformer-remark": "^1.7.31",
     "react-helmet": "^5.2.0",
     "react-media": "^1.8.0"
   },
@@ -31,5 +31,9 @@
   "devDependencies": {
     "gh-pages": "^1.1.0",
     "prettier": "^1.10.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:russellschmidt/russellschmidt-dev.git"
   }
 }

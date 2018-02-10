@@ -5,6 +5,8 @@ import Helmet from 'react-helmet';
 import Media from 'react-media';
 
 import Header from '../components/Header';
+import Sidebar from '../components/Sidebar';
+
 import './index.css';
 import "../styles/layout-override.css";
 
@@ -13,8 +15,8 @@ const TemplateWrapper = ({ children }) => (
     <Helmet
       title="Russell Schmidt"
       meta={[
-        { name: 'description', content: 'All about Russell Schmidt, developer: portfolio and blog' },
-        { name: 'keywords', content: 'Russell Schmidt, developer, blog, portfolio, dev, web developer, webmaster' },
+        { name: "description", content: "Russell Schmidt's Developer Portfolio and Engineering Blog " },
+        { name: "keywords", content: "Russell Schmidt, developer, dev, react, rails, portfolio, blog, javascript, html, css, sass, Los Angeles, California, front end, back end, full stack, engineer, bulldog, engineering" }
       ]}
     />
     <Header />
@@ -25,10 +27,11 @@ const TemplateWrapper = ({ children }) => (
         display: "flex",
         flexDirection: "row",
         justifyContent: "space-between",
-        height: "100%"      }}
+        height: "100%"
+      }}
     >
       <Media query={{ maxWidth: 848 }}>
-        { matches=>
+        {matches =>
           matches ? (
             <div
               style={{
@@ -56,28 +59,25 @@ const TemplateWrapper = ({ children }) => (
               }}
             >
               <div style={{ flex: 2.5, paddingRight: "30px" }}>
-                { children() }
+                {children()}
               </div>
-              <div style={{ flex: 1 }}>
+<div style={{ flex: 1 }}>
                 <Sidebar
-                  title="Articles"
-                  description="Thoughts on Development, all written by me"
+                  title="Codestack"
+                  description="Blog posts written by me."
                 />
                 <Sidebar
-                  title="Portfolio"
-                  description="Projects blessed with my code"
-                />
-                <Sidebar
-                  title="About Me"
-                  description="Biography of Yours Truly"
+                  title="About author"
+                  description="I am a Full-stack Web Developer specializing in React and Node.js (with some love for Ruby on Rails) based in Los Angeles, California."
                 />
               </div>
             </div>
-          )}
+          )
+        }
       </Media>
     </div>
   </div>
-)
+);
 
 TemplateWrapper.propTypes = {
   children: PropTypes.func,
